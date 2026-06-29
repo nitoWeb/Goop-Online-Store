@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout | GOOP Studios</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-row">
+      <div class="header-left">
+        <a href="index.html">Voltar</a>
+      </div>
+
+      <a href="index.html" class="logo">GOOP STUDIOS</a>
+
+      <div class="header-right">
+        <a href="index.html">Conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="checkout-container checkout-premium">
+    <section class="checkout-formulario">
+      <p class="produto-tag">CHECKOUT</p>
+      <h1>Finalizar pedido</h1>
+      <p class="checkout-subtexto">Preencha seus dados para confirmar o pedido.</p>
+
+      <form id="formCheckout" novalidate>
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input id="nome" type="text" placeholder="Seu nome" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="seuemail@email.com" required>
+        </div>
+
+        <div class="checkout-grid-2">
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="text" placeholder="(00) 00000-0000">
+          </div>
+
+          <div class="campo">
+            <label for="cep">CEP</label>
+            <input id="cep" type="text" placeholder="00000-000" required>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="endereco">Endereço</label>
+          <input id="endereco" type="text" placeholder="Rua, número, bairro" required>
+        </div>
+
+        <div class="checkout-grid-2">
+          <div class="campo">
+            <label for="cidade">Cidade</label>
+            <input id="cidade" type="text" placeholder="Sua cidade" required>
+          </div>
+
+          <div class="campo">
+            <label for="estado">Estado</label>
+            <input id="estado" type="text" placeholder="BA">
+          </div>
+        </div>
+
+        <div class="checkout-info-box">
+          <p>Pagamento ainda não integrado.</p>
+          <span>Essa etapa confirma o pedido e salva em “Meus pedidos”.</span>
+        </div>
+
+        <button type="submit" class="botao-comprar">Confirmar pedido</button>
+      </form>
+    </section>
+
+    <aside class="checkout-resumo checkout-resumo-premium">
+      <p class="produto-tag">RESUMO</p>
+      <h2>Seu pedido</h2>
+
+      <div id="checkoutItens"></div>
+
+      <div class="checkout-total">
+        <p id="checkoutTotal">Total: R$0,00</p>
+      </div>
+    </aside>
+  </main>
+
+  <div id="pageLoader">
+    <div class="loader-text">GOOP</div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="checkout.js"></script>
+</body>
+</html>

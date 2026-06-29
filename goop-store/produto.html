@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto | GOOP Studios</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="top-strip">
+    <div class="top-strip-track">
+      <span>NOVO DROP DISPONÍVEL</span>
+      <span>•</span>
+      <span>GOOP STUDIOS</span>
+      <span>•</span>
+      <span>PREMIUM STREETWEAR</span>
+      <span>•</span>
+      <span>NOVO DROP DISPONÍVEL</span>
+      <span>•</span>
+      <span>GOOP STUDIOS</span>
+      <span>•</span>
+      <span>PREMIUM STREETWEAR</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-row">
+      <div class="header-left">
+        <a href="index.html">Voltar</a>
+      </div>
+
+      <a href="index.html" class="logo">GOOP STUDIOS</a>
+
+      <div class="header-right">
+        <a href="#">Conta</a>
+        <a href="#" id="abrirCarrinho">Carrinho (<span id="cartCount">0</span>)</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html#produtos">Peças</a>
+      <a href="#">Coleções</a>
+      <a href="#">Marca</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main class="produto-pagina">
+    <section class="produto-galeria reveal">
+      <div class="miniaturas">
+        <img src="imagens/casacodetras.webp" alt="Miniatura 1" class="miniatura ativa" id="miniatura1">
+        <img src="imagens/pessoausandoocasaco.webp" alt="Miniatura 2" class="miniatura" id="miniatura2">
+      </div>
+
+      <div class="imagem-principal">
+        <img src="imagens/casacodetras.webp" alt="Produto GOOP" id="imagemPrincipal">
+      </div>
+    </section>
+
+    <section class="produto-detalhes reveal">
+      <p class="produto-tag" id="produtoMarca">GOOP STUDIOS</p>
+      <h1 id="produtoNome">HOODIE BOXY “I GUESS WE’LL NEVER KNOW” — PRETO</h1>
+      <p class="produto-preco" id="produtoPreco">R$316,70</p>
+
+      <p class="produto-descricao" id="produtoDescricao">
+        Moletom premium com modelagem boxy, acabamento oversized e identidade visual GOOP.
+        Peça desenvolvida para unir conforto, presença e estética streetwear.
+      </p>
+
+      <div class="tamanhos" id="blocoTamanhos">
+        <p>Tamanho</p>
+        <div class="tamanhos-opcoes" id="tamanhosOpcoes">
+          <button type="button" class="tamanho">P</button>
+          <button type="button" class="tamanho">M</button>
+          <button type="button" class="tamanho">G</button>
+          <button type="button" class="tamanho">GG</button>
+        </div>
+      </div>
+
+      <button class="botao-comprar" type="button" id="botaoComprar">Comprar</button>
+
+      <div class="infos-extra" id="infosExtra">
+        <p>• Modelagem oversized</p>
+        <p>• Cor: preto</p>
+        <p>• Coleção GOOP Studios</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="footer">
+    <p>GOOP Studios</p>
+    <p>Instagram: @goopstd</p>
+  </footer>
+
+  <div id="carrinhoLateral" class="carrinho-lateral">
+    <div class="carrinho-header">
+      <h2>Carrinho</h2>
+      <button id="fecharCarrinho" type="button">X</button>
+    </div>
+
+    <div id="itensCarrinho"></div>
+
+    <div class="carrinho-footer">
+      <p id="totalCarrinho">Total: R$0,00</p>
+      <button class="botao-comprar ir-checkout" type="button">Finalizar compra</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div id="pageLoader">
+    <div class="loader-text">GOOP</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

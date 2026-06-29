@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedido confirmado | GOOP Studios</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-row">
+      <div class="header-left">
+        <a href="index.html">Voltar à loja</a>
+      </div>
+
+      <a href="index.html" class="logo">GOOP STUDIOS</a>
+
+      <div class="header-right">
+        <a href="index.html">Conta</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="sucesso-container">
+    <section class="sucesso-card">
+      <p class="produto-tag">PEDIDO CONFIRMADO</p>
+      <h1>Obrigado pela compra.</h1>
+      <p class="sucesso-texto">
+        Seu pedido foi registrado com sucesso. Você pode acompanhar ele depois em “Meus pedidos”.
+      </p>
+
+      <div class="sucesso-info">
+        <p><span>Número do pedido</span> <strong id="sucessoPedidoId">---</strong></p>
+        <p><span>Total</span> <strong id="sucessoPedidoTotal">R$0,00</strong></p>
+        <p><span>Status</span> <strong id="sucessoPedidoStatus">Pedido confirmado</strong></p>
+      </div>
+
+      <div class="sucesso-acoes">
+        <a href="index.html" class="botao-sucesso">Continuar comprando</a>
+        <a href="index.html" class="link-sucesso">Ir para minha conta</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="pageLoader">
+    <div class="loader-text">GOOP</div>
+  </div>
+
+  <script>
+    const ultimoPedido = JSON.parse(localStorage.getItem('goopUltimoPedido'));
+
+    if (ultimoPedido) {
+      document.getElementById('sucessoPedidoId').textContent = ultimoPedido.id || '---';
+      document.getElementById('sucessoPedidoTotal').textContent = ultimoPedido.total || 'R$0,00';
+      document.getElementById('sucessoPedidoStatus').textContent = ultimoPedido.status || 'Pedido confirmado';
+    }
+
+    const pageLoader = document.getElementById('pageLoader');
+
+    window.addEventListener('load', () => {
+      if (pageLoader) {
+        setTimeout(() => {
+          pageLoader.classList.add('esconder');
+        }, 150);
+      }
+    });
+  </script>
+</body>
+</html>

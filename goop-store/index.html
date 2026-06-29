@@ -1,0 +1,265 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOOP Studios</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="top-strip">
+    <div class="top-strip-track">
+      <span>NEW DROP IS LIVE NOW</span>
+      <span>•</span>
+      <span>GOOP STUDIOS</span>
+      <span>•</span>
+      <span>PREMIUM STREETWEAR</span>
+      <span>•</span>
+      <span>NEW DROP IS LIVE NOW</span>
+      <span>•</span>
+      <span>GOOP STUDIOS</span>
+      <span>•</span>
+      <span>PREMIUM STREETWEAR</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-row">
+      <div class="header-left">
+        <a href="#" id="abrirBusca">Buscar</a>
+      </div>
+
+      <a href="#" class="logo">GOOP STUDIOS</a>
+
+      <div class="header-right">
+        <a href="#" id="abrirConta">Conta</a>
+        <a href="#" id="abrirCarrinho">Carrinho (<span id="cartCount">0</span>)</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#produtos">Peças</a>
+      <a href="#produtos">Shop</a>
+      <a href="#colecoes">Coleções</a>
+      <a href="#marca">Brand</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div id="painelBusca" class="painel-busca">
+    <div class="painel-busca-topo">
+      <p>Buscar</p>
+      <button type="button" id="fecharBusca">Fechar</button>
+    </div>
+
+    <div class="painel-busca-campo">
+      <input
+        type="text"
+        id="inputBusca"
+        placeholder="Busque por produto, peça ou coleção"
+        autocomplete="off"
+      />
+    </div>
+
+    <div id="resultadosBusca" class="resultados-busca"></div>
+  </div>
+
+  <div id="overlayBusca" class="overlay-busca"></div>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content reveal">
+      <p class="hero-kicker">SS26 · 01</p>
+    <h1>
+  <span>GOOP</span>
+  <span>STUDIOS</span>
+</h1>
+      <a href="#produtos" class="hero-btn">Shop now</a>
+    </div>
+  </section>
+
+  <section class="category-bar reveal" id="colecoes">
+    <a href="#produtos">T-Shirts</a>
+    <a href="#produtos">Hoodies</a>
+    <a href="#produtos">Bottoms</a>
+    <a href="#produtos">Accessories</a>
+  </section>
+
+  <section class="section-head reveal">
+    <p>PEÇAS</p>
+  </section>
+
+  <section class="products" id="produtos">
+    <article class="product-card reveal" data-nome="hoodie boxy i guess well never know preto moletom">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=HOODIE%20BOXY%20%E2%80%9CI%20GUESS%20WE%E2%80%99LL%20NEVER%20KNOW%E2%80%9D%20%E2%80%94%20PRETO&preco=R%24316,70&img1=imagens/casacodetras.webp&img2=imagens/pessoausandoocasaco.webp&tamanhos=sim&descricao=Moletom%20premium%20com%20modelagem%20boxy,%20acabamento%20oversized%20e%20identidade%20visual%20GOOP.%20Pe%C3%A7a%20desenvolvida%20para%20unir%20conforto,%20presen%C3%A7a%20e%20est%C3%A9tica%20streetwear.&info1=%E2%80%A2%20Modelagem%20oversized&info2=%E2%80%A2%20Cor:%20preto&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="./imagens/casacodetras.webp" alt="Produto GOOP" class="main-img">
+        <img src="./imagens/pessoausandoocasaco.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>HOODIE BOXY “I GUESS WE’LL NEVER KNOW” — PRETO</h3>
+        <p>R$316,70</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="tshirt oversized 1997 off-white camisa branca">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=TSHIRT%20OVERSIZED%20%221997%22%20OFF-WHITE&preco=R%24181,90&img1=imagens/camisabrancafrente.webp&img2=imagens/camisabrancamodelo.webp&tamanhos=sim&descricao=Camiseta%20oversized%20com%20est%C3%A9tica%20streetwear%20e%20caimento%20premium.&info1=%E2%80%A2%20Modelagem%20oversized&info2=%E2%80%A2%20Cor:%20off-white&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/camisabrancafrente.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/camisabrancamodelo.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>TSHIRT OVERSIZED "1997" OFF-WHITE</h3>
+        <p>R$181,90</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="tshirt oversized stay authentic preta camisa preta">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=TSHIRT%20OVERSIZED%20%22STAY%20AUTHENTIC%22%20PRETA&preco=R%24189,00&img1=imagens/camisagoopbasicafrente.webp&img2=imagens/camisagoopbasicamodelo.webp&tamanhos=sim&descricao=Camiseta%20premium%20GOOP%20com%20estilo%20minimalista%20e%20presen%C3%A7a%20streetwear.&info1=%E2%80%A2%20Modelagem%20oversized&info2=%E2%80%A2%20Cor:%20preto&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/camisagoopbasicafrente.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/camisagoopbasicamodelo.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>TSHIRT OVERSIZED "STAY AUTHENTIC" PRETA</h3>
+        <p>R$189,00</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="tshirt overboxy space-out camisa preta">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=TSHIRT%20OVERBOXY%20%22SPACE-OUT%22&preco=R%24139,99&img1=imagens/camisabasicapretasemmodelo.webp&img2=imagens/camisabasicapretasemmodelo2.webp&tamanhos=sim&descricao=Camiseta%20overboxy%20com%20identidade%20GOOP%20e%20presen%C3%A7a%20urbana.&info1=%E2%80%A2%20Modelagem%20overboxy&info2=%E2%80%A2%20Cor:%20preto&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/camisabasicapretasemmodelo.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/camisabasicapretasemmodelo2.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>TSHIRT OVERBOXY "SPACE-OUT"</h3>
+        <p>R$139,99</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="moletom authentic preto">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=MOLETOM%20%27AUTHENTIC%27%20PRETO&preco=R%2479,90&img1=imagens/moletomgoop.webp&img2=imagens/moletomgoopmodelo.webp&tamanhos=sim&descricao=Moletom%20GOOP%20com%20visual%20essencial%20e%20acabamento%20premium.&info1=%E2%80%A2%20Modelagem%20comfort&info2=%E2%80%A2%20Cor:%20preto&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/moletomgoop.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/moletomgoopmodelo.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>MOLETOM 'AUTHENTIC' PRETO</h3>
+        <p>R$79,90</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="isqueiro vintage goop acessorio">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=ISQUEIRO%20VINTAGE%20%22GOOP%22&preco=R%2453,99&img1=imagens/isqueirogoop.webp&img2=imagens/isqueirogoopnamao.webp&tamanhos=nao&descricao=Isqueiro%20vintage%20GOOP%20para%20compor%20acess%C3%B3rios%20da%20marca.&info1=%E2%80%A2%20Acess%C3%B3rio%20colecion%C3%A1vel&info2=%E2%80%A2%20Visual%20vintage&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/isqueirogoop.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/isqueirogoopnamao.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>ISQUEIRO VINTAGE "GOOP"</h3>
+        <p>R$53,99</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="bone dad-hat make your away bone acessorio">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=BON%C3%89%20DAD-HAT%20%22MAKE%20YOUR%20AWAY%22&preco=R%24112,00&img1=imagens/bonegoop.webp&img2=imagens/bonegoopfundo.webp&tamanhos=nao&descricao=Bon%C3%A9%20dad-hat%20GOOP%20com%20presen%C3%A7a%20street%20e%20acabamento%20premium.&info1=%E2%80%A2%20Ajust%C3%A1vel&info2=%E2%80%A2%20Cor:%20preto&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/bonegoop.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/bonegoopfundo.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>BONÉ DAD-HAT "MAKE YOUR AWAY"</h3>
+        <p>R$112,00</p>
+      </div>
+    </article>
+
+    <article class="product-card reveal" data-nome="tshirt overboxy first-step branca camisa">
+      <button class="favorito-btn" type="button">♡</button>
+      <a href="produto.html?nome=TSHIRT%20OVERBOXY%20%22FIRST-STEP%22&preco=R%24139,99&img1=imagens/camisabrancagoop.webp&img2=imagens/camisabrancagoopfundo.webp&tamanhos=sim&descricao=Camiseta%20overboxy%20com%20est%C3%A9tica%20limpa%20e%20identidade%20GOOP.&info1=%E2%80%A2%20Modelagem%20overboxy&info2=%E2%80%A2%20Cor:%20branco&info3=%E2%80%A2%20Cole%C3%A7%C3%A3o%20GOOP%20Studios" class="product-image">
+        <img src="imagens/camisabrancagoop.webp" alt="Produto GOOP" class="main-img">
+        <img src="imagens/camisabrancagoopfundo.webp" alt="Produto GOOP hover" class="hover-img">
+      </a>
+      <div class="product-info">
+        <h3>TSHIRT OVERBOXY "FIRST-STEP"</h3>
+        <p>R$139,99</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="split-banner reveal" id="marca">
+    <div class="split-text">
+      <p class="mini-label">COLLECTION</p>
+      <h2>Streetwear with identity.</h2>
+      <a href="#produtos">View products</a>
+    </div>
+    <div class="split-image"></div>
+  </section>
+
+  <footer id="contato" class="footer">
+    <p>GOOP Studios</p>
+    <p>Instagram: @goopstd</p>
+  </footer>
+
+  <div id="carrinhoLateral" class="carrinho-lateral">
+    <div class="carrinho-header">
+      <h2>Carrinho</h2>
+      <button id="fecharCarrinho" type="button">X</button>
+    </div>
+
+    <div id="itensCarrinho"></div>
+
+    <div class="carrinho-footer">
+      <p id="totalCarrinho">Total: R$0,00</p>
+      <button class="botao-comprar ir-checkout" type="button">Finalizar compra</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay"></div>
+
+  <div id="painelConta" class="painel-conta">
+    <div class="painel-conta-topo">
+      <p>Conta</p>
+      <button type="button" id="fecharConta">Fechar</button>
+    </div>
+
+    <div class="painel-conta-conteudo" id="conteudoConta">
+      <p class="conta-titulo">Acesse sua conta</p>
+
+      <div class="campo-conta">
+        <label for="nomeConta">Nome</label>
+        <input type="text" id="nomeConta" placeholder="Seu nome" />
+      </div>
+
+      <div class="campo-conta">
+        <label for="emailConta">E-mail</label>
+        <input type="email" id="emailConta" placeholder="seuemail@email.com" />
+      </div>
+
+      <button type="button" class="botao-conta-acao" id="salvarConta">
+        Entrar / Criar conta
+      </button>
+
+      <div class="conta-links">
+        <button type="button" class="conta-link" id="verPedidos">Meus pedidos</button>
+        <button type="button" class="conta-link" id="verFavoritos">Favoritos</button>
+        <button type="button" class="conta-link sair" id="sairConta">Sair</button>
+      </div>
+
+      <p class="conta-status" id="statusConta"></p>
+    </div>
+  </div>
+
+  <div id="overlayConta" class="overlay-conta"></div>
+
+  <div id="pageLoader">
+    <div class="loader-text">GOOP</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
